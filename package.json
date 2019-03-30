@@ -1,6 +1,6 @@
 {
-  "name": "js-type-name",
-  "version": "1.0.0",
+  "name": "js-type",
+  "version": "1.0.1",
   "description": "Typed Javascript",
   "main": "index.js",
   "scripts": {
