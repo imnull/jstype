@@ -1,0 +1,2 @@
+# jstype
+Typed Javascript
