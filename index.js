@@ -2,6 +2,9 @@ const os = Object.prototype.toString;
 const tstr = v => typeof(v);
 const ostr = v => os.call(v);
 
+const getName = v => ostr(v).slice(8,-1);
+const name = v => getName(v).toLowerCase();
+
 const isNull = v => v === null;
 const isUndefined = v => tstr(v) === 'undefined';
 const isString = v => tstr(v) === 'string';
@@ -17,7 +20,14 @@ const isValidNumber = v => isNumber(v) && !isNaN(v);
 const isInt = v => (v >> 0) === v;
 const isUint = v => isInt(v) && v >= 0;
 
+
+
 module.exports = {
+    tstr,
+    ostr,
+    getName,
+    name,
+
     isNull,
     isUndefined,
 
